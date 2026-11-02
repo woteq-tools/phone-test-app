@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Torch &amp; Vibrate</title>
+<meta name="theme-color" content="#111318">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <h1>Torch &amp; Vibrate</h1>
+
+  <button id="torch" class="btn btn-torch" type="button" aria-pressed="false">
+    <span class="icon">🔦</span>
+    <span class="label">Torch</span>
+    <span class="state" id="torch-state">off</span>
+  </button>
+
+  <button id="vibrate" class="btn btn-vibrate" type="button">
+    <span class="icon">📳</span>
+    <span class="label">Vibrate</span>
+    <span class="state" id="vibrate-state">tap</span>
+  </button>
+
+  <p class="hint" id="hint">Press the buttons above.</p>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
